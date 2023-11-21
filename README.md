@@ -1,9 +1,10 @@
 # DOD generator
 
-This scripts automatize the creation of DODs. You don't need to add exception for temporal discontinuities
-in data, the script handles it.
+This scripts automatize the creation of DODs. You don't need to add exception
+for temporal discontinuities in data, the script handles it.
 
-It takes as input a folder containing DEM (`PlaceName_YYYYMM_DEM.tif`) in subdirs named by place:
+It takes as input a folder containing DEMs (`PlaceName_YYYYMM_DEM.tif`) in
+subdirs named by place :
 
 ```
 .
@@ -22,11 +23,12 @@ It takes as input a folder containing DEM (`PlaceName_YYYYMM_DEM.tif`) in subdir
 A mask is used to get only the area of interest.
 
 The results are:
-- two clip DEM under a given directory
+- Two cliped DEM under a given directory
 - The generated DOD under a given directory
 
-Each time, the directory is automatically generated if it has not been created before, resulting in such directory
-pattern:
+Each time, the directory is automatically generated if it has not been created
+before, resulting in such directory pattern:
+
 1. For the clipped DEM:
 
 ```
@@ -66,4 +68,6 @@ RACINE
 
 ```
 
-If you already have files, you have to delete them before generating the DOD. **The script prevents overwriting**.
+If you already have files, you have to delete them before generating the DOD.
+**The QGIS functions prevent overwriting**.
+
